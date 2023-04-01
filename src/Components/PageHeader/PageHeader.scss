@@ -1,0 +1,48 @@
+@import "../../abstracts.scss";
+
+.header {
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+
+  .left {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+
+    .logo {
+      height: 30px;
+      width: 144px;
+    }
+    .searchField {
+      display: flex;
+      width: 400px;
+      height: 40px;
+      position: relative;
+      input {
+        padding: 1rem;
+        width: 100%;
+        border: 1px solid $color-primary-dark;
+        border-radius: 0.7rem;
+      }
+      .searchIcon {
+        background-color: $color-basic;
+        width: 56px;
+        height: 40px;
+        margin-left: -14%;
+        border-radius: 0 0.7rem 0.7rem 0;
+        position: relative;
+        img {
+          @include abscenter;
+        }
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

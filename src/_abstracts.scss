@@ -1,0 +1,13 @@
+//variables
+$color-primary: #213f7d;
+$color-primary-light: #545f7d;
+$color-primary-dark: #545f7d26;
+$color-basic: #39cdcc;
+
+//mixins
+@mixin abscenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
