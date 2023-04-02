@@ -5,6 +5,31 @@ import Logo from "../../Assets/logo.svg";
 import SignInImage from "../../Assets/signInImage.png";
 
 const LoginPage = () => {
+  const password = document.querySelector("#pwd");
+  const toggleBtn = document.querySelector("#togglePwd");
+  toggleBtn?.addEventListener("click", function () {
+    // console.log(password?.getAttribute("type"));
+    //toggle type attribute
+    const type =
+      password?.getAttribute("type") === "password" ? "text" : "password";
+    password?.setAttribute("type", type);
+  });
+
+  //prevent form submit
+  const form = document.querySelector("form");
+  form?.addEventListener("submit", function (e) {
+    e.preventDefault();
+  });
+
+  // const showPwd = () => {
+  //   const showPwdBtn = document.getElementById("pwd");
+  //   if (showPwdBtn.type === "password") {
+  //     showPwdBtn.type === "text";
+  //   } else {
+  //     showPwdBtn.type === "password";
+  //   }
+  // };
+
   return (
     <div className="loginPage">
       <div className="left">
@@ -17,8 +42,13 @@ const LoginPage = () => {
         <form>
           <input type="email" name="email" placeholder="Email" />
           <label>
-            <input type="password" name="password" placeholder="Password" />
-            <button>SHOW</button>
+            <input
+              type="password"
+              id="pwd"
+              name="password"
+              placeholder="Password"
+            />
+            <button id="togglePwd">SHOW</button>
           </label>
           <span> FORGOT PASSWORD?</span>
           <br />

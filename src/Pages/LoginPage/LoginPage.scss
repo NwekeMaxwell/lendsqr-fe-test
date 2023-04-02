@@ -51,14 +51,24 @@
       display: flex;
       flex-direction: column;
       margin-top: 3%;
+      text-align: center;
       input {
         width: 100%;
         opacity: 60%;
         padding: 0.7rem;
-        color: $color-primary-dark;
+        color: $color-primary;
         margin-top: 24px;
         border: 1px solid $color-primary-dark;
+        &:focus {
+          outline: none;
+          border-bottom: 3px solid $color-basic;
+        }
+        &:focus:invalid {
+          outline: none;
+          border-bottom: 3px solid $color-secondary;
+        }
       }
+
       label {
         position: relative;
         button {
@@ -100,17 +110,15 @@
         margin-top: 2%;
         padding: 0.7rem;
 
-        * {
-          // font-family: "Avenir Next";
-          text-align: center;
-          letter-spacing: 0.1em;
-          line-height: 19px;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 14px;
-          text-decoration: none;
-          color: #fff;
-        }
+        // font-family: "Avenir Next";
+        text-align: center;
+        letter-spacing: 0.1em;
+        line-height: 19px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
       }
     }
   }
