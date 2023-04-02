@@ -4,7 +4,7 @@
   display: flex;
   width: 100vw;
   height: 100px;
-  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: $boxShadow;
   padding: 2rem;
 
   .left {
@@ -43,6 +43,29 @@
 
   .right {
     display: flex;
-    justify-content: flex-start;
+    width: 50vw;
+    justify-content: flex-end;
+    gap: 2rem;
+    color: $color-primary;
+    align-items: center;
+    padding: 1rem;
+    div {
+      width: 58px;
+      height: 19px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 18.77px;
+    }
+    .h-text {
+      text-decoration: underline;
+    }
+    .avatar {
+      width: 48px;
+      height: 48px;
+      margin-right: -3%;
+    }
+    .arrIcon {
+      margin-left: -5%;
+    }
   }
 }

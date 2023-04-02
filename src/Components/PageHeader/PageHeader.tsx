@@ -1,10 +1,10 @@
 import React from "react";
 import "./PageHeader.scss";
 import Logo from "../../Assets/logo.svg";
-import searchIcon from "../../Assets/searchIcon.svg";
-import bellIcon from "../../Assets/bellIcon.svg";
-import avatar from "../../Assets/avatar.png";
-import arrow from "../../Assets/arrowDownIcon.svg";
+import SearchIcon from "../../Assets/searchIcon.svg";
+import BellIcon from "../../Assets/bellIcon.svg";
+import Avatar from "../../Assets/avatar.jpg";
+import Arrow from "../../Assets/arrowDownIcon.svg";
 
 const PageHeader = () => {
   return (
@@ -14,16 +14,16 @@ const PageHeader = () => {
         <div className="searchField">
           <input type="search" placeholder="search for anything" />
           <div className="searchIcon">
-            <img src={searchIcon} alt="" />
+            <img src={SearchIcon} alt="" />
           </div>
         </div>
       </div>
       <div className="right">
         <div className="h-text">Docs</div>
-        <div className="bellIcon">{bellIcon}</div>
-        <div className="avatar">{avatar}</div>
-        <div className="h-text">Adedeji</div>
-        <div className="arrIcon">{arrow}</div>
+        <img src={BellIcon} alt="" className="bellIcon" />
+        <img src={Avatar} alt="" className="avatar" />
+        <div>Adedeji</div>
+        <img src={Arrow} alt="" className="arrIcon" />
       </div>
     </div>
   );
