@@ -1,0 +1,32 @@
+@import "../../abstracts";
+
+.sidebar {
+  width: 283px;
+  box-shadow: $boxShadow;
+  clip-path: inset(0px -10px 0px 0px);
+  color: $color-primary;
+
+  h3 {
+    // font-family: "Work Sans";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 20px;
+    margin: 20px 10px 10px 10px;
+    height: 14px;
+    width: 75px;
+  }
+  .active {
+    font-size: 5rem;
+    background-color: rgba($color-basic, 0.06);
+    border-left: 3px solid $color-basic;
+    transition: all 0.05s;
+    color: $color-primary;
+  }
+  .switch {
+    margin: 20px 0px;
+    letter-spacing: 1px;
+    color: $color-primary;
+  }
+}
