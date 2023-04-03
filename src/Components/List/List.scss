@@ -1,0 +1,27 @@
+@import "../../abstracts";
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr) 20px;
+  padding: 20px 0px;
+  border-bottom: 1px solid $color-primary-dark;
+  span {
+    //   font-family: "Work Sans";
+    display: flex;
+    align-items: center;
+    height: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-primary;
+    width: 100%;
+    height: 17px;
+    color: $color-primary-light;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
