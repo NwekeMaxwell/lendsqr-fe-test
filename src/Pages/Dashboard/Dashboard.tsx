@@ -8,8 +8,10 @@ const Dashboard = () => {
   return (
     <div>
       <PageHeader />
-      <SideBar />
-      <Users />
+      <div className="content">
+        <SideBar />
+        <Users />
+      </div>
     </div>
   );
 };
