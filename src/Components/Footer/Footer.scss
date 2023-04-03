@@ -1,0 +1,59 @@
+@import "../../abstracts";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+
+  .left {
+    span {
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #545f7d;
+    }
+    button {
+      background: rgba(33, 63, 125, 0.1);
+      border-radius: 4px;
+      height: 30px;
+      width: 80px;
+      border: none;
+      padding: 7px 10px;
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-primary-light;
+      margin: 10px;
+
+      img {
+        height: 11px;
+        width: 6px;
+        margin-left: 12px;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    * {
+      margin-left: 20px;
+      align-self: center;
+    }
+    span {
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $color-primary;
+      opacity: 0.6;
+    }
+    .F-active {
+      opacity: 1;
+    }
+  }
+}
