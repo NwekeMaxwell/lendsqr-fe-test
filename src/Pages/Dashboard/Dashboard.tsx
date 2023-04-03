@@ -1,8 +1,10 @@
 import React from "react";
 import "./Dashboard.scss";
 import PageHeader from "../../Components/PageHeader/PageHeader";
+// import UsersPage from "../UsersPage/UsersPage";
+import UsersPageComponent from "../../Components/UsersPageComponent/UsersPageComponent";
 import SideBar from "../../Components/SideBar/SideBar";
-import Users from "../SubPages/Users/Users";
+// import UsersPage from "../../Components/UsersPageComponent/UsersPageComponent";
 
 const Dashboard = () => {
   return (
@@ -10,7 +12,7 @@ const Dashboard = () => {
       <PageHeader />
       <div className="content">
         <SideBar />
-        <Users />
+        <UsersPageComponent />
       </div>
     </div>
   );

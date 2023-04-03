@@ -1,6 +1,7 @@
 import React from "react";
 import "./List.scss";
 import iOption from "../../Assets/ic-more-vert-18px.svg";
+import { Link } from "react-router-dom";
 // import UserDropdownOption from "../UserDropdownOption/UserDropdownOption";
 
 const List = () => {
@@ -12,7 +13,7 @@ const List = () => {
   // }
 
   return (
-    <div className="list">
+    <Link to="/userdetails" className="list">
       <span>ORGANIZATION</span>
       <span>USERNAME</span>
       <span>EMAIL</span>
@@ -21,7 +22,7 @@ const List = () => {
       <span>STATUS</span>
       <img src={iOption} alt="" className="iOption" />
       {/* <UserDropdownOption /> */}
-    </div>
+    </Link>
   );
 };
 

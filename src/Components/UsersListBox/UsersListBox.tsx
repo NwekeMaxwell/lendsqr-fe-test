@@ -2,6 +2,7 @@ import React from "react";
 import "./UsersListBox.scss";
 import iFilter from "../../Assets/filter-results-button.svg";
 import List from "../List/List";
+import { Link } from "react-router-dom";
 // import FilterBox from "../FilterBox/FilterBox";
 
 const UsersListBox = () => {
@@ -9,22 +10,40 @@ const UsersListBox = () => {
     <div className="usersList">
       <div className="heading">
         <span>
-          ORGANIZATION <img src={iFilter} alt="" className="iFilter" />
+          ORGANIZATION
+          <Link to="/users">
+            <img src={iFilter} alt="" className="iFilter" />
+          </Link>
         </span>
         <span>
-          USERNAME <img src={iFilter} alt="" className="iFilter" />
+          USERNAME
+          <Link to="/users">
+            <img src={iFilter} alt="" className="iFilter" />
+          </Link>
         </span>
         <span>
-          EMAIL <img src={iFilter} alt="" className="iFilter" />
+          EMAIL
+          <Link to="/users">
+            <img src={iFilter} alt="" className="iFilter" />
+          </Link>
         </span>
         <span>
-          PHONE NUMBER <img src={iFilter} alt="" className="iFilter" />
+          PHONE NUMBER
+          <Link to="/users">
+            <img src={iFilter} alt="" className="iFilter" />
+          </Link>
         </span>
         <span>
-          DATE JOINED <img src={iFilter} alt="" className="iFilter" />
+          DATE JOINED
+          <Link to="/users">
+            <img src={iFilter} alt="" className="iFilter" />
+          </Link>
         </span>
         <span>
-          STATUS <img src={iFilter} alt="" className="iFilter" />
+          STATUS
+          <Link to="/users">
+            <img src={iFilter} alt="" className="iFilter" />
+          </Link>
         </span>
       </div>
       <div className="listComponent">

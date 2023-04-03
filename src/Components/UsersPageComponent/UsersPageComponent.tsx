@@ -1,14 +1,14 @@
 import React from "react";
-import "./Users.scss";
-import SummaryBox from "../../../Components/SummaryBox/SummaryBox";
-import iPink from "../../../Assets/icon (1).svg";
-import ipurple from "../../../Assets/icon (2).svg";
-import ired from "../../../Assets/icon (3).svg";
-import iorange from "../../../Assets/icon (4).svg";
-import UsersListBox from "../../../Components/UsersListBox/UsersListBox";
-import Footer from "../../../Components/Footer/Footer";
+import "./UsersPageComponent.scss";
+import SummaryBox from "../SummaryBox/SummaryBox";
+import iPink from "../../Assets/icon (1).svg";
+import ipurple from "../../Assets/icon (2).svg";
+import ired from "../../Assets/icon (3).svg";
+import iorange from "../../Assets/icon (4).svg";
+import UsersListBox from "../UsersListBox/UsersListBox";
+import Footer from "../Footer/Footer";
 
-const Users = () => {
+const UsersPageComponent = () => {
   return (
     <div className="usersContainer">
       <h1 className="title">Users</h1>
@@ -28,4 +28,4 @@ const Users = () => {
   );
 };
 
-export default Users;
+export default UsersPageComponent;
