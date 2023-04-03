@@ -28,15 +28,6 @@ const UsersListBox = () => {
       </div>
       <div className="listComponent">
         <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
       </div>
     </div>
   );

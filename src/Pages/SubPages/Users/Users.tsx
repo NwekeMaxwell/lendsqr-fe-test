@@ -6,6 +6,7 @@ import ipurple from "../../../Assets/icon (2).svg";
 import ired from "../../../Assets/icon (3).svg";
 import iorange from "../../../Assets/icon (4).svg";
 import UsersListBox from "../../../Components/UsersListBox/UsersListBox";
+import Footer from "../../../Components/Footer/Footer";
 
 const Users = () => {
   return (
@@ -20,7 +21,9 @@ const Users = () => {
       <div className="usersListBox">
         <UsersListBox />
       </div>
-      <div> footer</div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };
