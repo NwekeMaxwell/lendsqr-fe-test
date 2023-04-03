@@ -4,6 +4,10 @@ import LoginPage from "./Pages/LoginPage/LoginPage";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 
+// fetch("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users")
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
+
 function App() {
   // const overlay = document.querySelector(".overlay");
   // let optionBox = document.querySelector(".optionBox");

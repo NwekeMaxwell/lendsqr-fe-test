@@ -2,6 +2,7 @@ import React from "react";
 import "./UsersListBox.scss";
 import iFilter from "../../Assets/filter-results-button.svg";
 import List from "../List/List";
+// import FilterBox from "../FilterBox/FilterBox";
 
 const UsersListBox = () => {
   return (
@@ -28,7 +29,17 @@ const UsersListBox = () => {
       </div>
       <div className="listComponent">
         <List />
+        <List />
+        <List />
+        <List />
+        <List />
+        <List />
+        <List />
+        <List />
+        <List />
+        <List />
       </div>
+      {/* <FilterBox /> */}
     </div>
   );
 };
