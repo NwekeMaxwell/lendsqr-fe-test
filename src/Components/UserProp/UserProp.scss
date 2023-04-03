@@ -1,0 +1,29 @@
+@import "../../abstracts";
+
+.UserProp {
+  width: 200px;
+  h3 {
+    // width: 69px;
+    height: 14px;
+    margin-bottom: 10px;
+
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: $color-primary-light;
+  }
+  p {
+    // width: 48px;
+    height: 19px;
+
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-primary;
+  }
+}

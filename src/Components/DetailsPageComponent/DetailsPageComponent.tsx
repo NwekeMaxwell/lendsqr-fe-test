@@ -2,6 +2,7 @@ import React from "react";
 import "./DetailsPageComponent.scss";
 import iArrowBack from "../../Assets/np_back_3007750_000000 1.svg";
 import UserBriefingComponent from "../UserBriefingComponent/UserBriefingComponent";
+import UserDetailsComponent from "../UserDetailsComponent/UserDetailsComponent";
 
 const DetailsPageComponent = () => {
   return (
@@ -18,6 +19,7 @@ const DetailsPageComponent = () => {
         </div>
       </div>
       <UserBriefingComponent />
+      <UserDetailsComponent />
     </div>
   );
 };
