@@ -6,27 +6,15 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 import UsersPage from "./Pages/UsersPage/UsersPage";
 import UserDetailsPage from "./Pages/UserDetailsPage/UserDetailsPage";
 
-// fetch("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users")
-//   .then((res) => res.json())
-//   .then((data) => console.log(data));
-
 function App() {
-  // const overlay = document.querySelector(".overlay");
-  // let optionBox = document.querySelector(".optionBox");
-  // overlay?.classList.add("hidden");
-  // optionBox?.classList.add("hidden");
-  // overlay?.addEventListener("click", () => {
-  //   overlay.classList.toggle("hidden");
-  //   optionBox?.classList.toggle("hidden");
-  // });
   return (
     <div className="App">
-      {/* <div className="overlay"></div> */}
       <Routes>
         <Route path="/" Component={LoginPage} />
         <Route path="/dashboard" Component={Dashboard} />
         <Route path="/users" Component={UsersPage} />
         <Route path="/userdetails" Component={UserDetailsPage} />
+        <Route path="*" element={<h1>PAGE NOT FOUND</h1>} />
       </Routes>
     </div>
   );

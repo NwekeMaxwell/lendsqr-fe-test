@@ -3,9 +3,15 @@ import "./UsersListBox.scss";
 import iFilter from "../../Assets/filter-results-button.svg";
 import List from "../List/List";
 import { Link } from "react-router-dom";
-// import FilterBox from "../FilterBox/FilterBox";
+import useFetchData from "../../useFetchData";
+import { iContext } from "../../useFetchData";
 
 const UsersListBox = () => {
+  const { userData } = useFetchData();
+  console.log(userData);
+  const start = 0;
+  const end = 10;
+
   return (
     <div className="usersList">
       <div className="heading">
@@ -47,18 +53,10 @@ const UsersListBox = () => {
         </span>
       </div>
       <div className="listComponent">
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
-        <List />
+        {userData?.slice(start, end).map((item: iContext) => (
+          <List key={item.id} {...item} />
+        ))}
       </div>
-      {/* <FilterBox /> */}
     </div>
   );
 };
