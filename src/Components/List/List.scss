@@ -6,6 +6,7 @@
   padding: 20px 0px;
   border-bottom: 1px solid $color-primary-dark;
   position: relative;
+  gap: 10px;
   text-decoration: none;
   span {
     //   font-family: "Work Sans";
@@ -20,10 +21,41 @@
     width: 100%;
     height: 17px;
     color: $color-primary-light;
+    &:nth-child(3) {
+      overflow: hidden;
+    }
+    &:nth-child(6) {
+      width: min-content;
+      height: 30px;
+      // font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      padding: 7px 13px;
+      border-radius: 100px;
+    }
   }
   img {
     width: 16px;
     height: 16px;
     cursor: pointer;
   }
+}
+#i {
+  color: $color-primary-light;
+  background-color: rgba($color-primary-light, 0.06);
+}
+#a {
+  color: $color-active;
+  background-color: rgba($color-active, 0.06);
+}
+#b {
+  color: $color-secondary-dark;
+  background-color: rgba($color-secondary-dark, 0.1);
+}
+#p {
+  color: $color-tertiary;
+  background-color: rgba($color-tertiary, 0.1);
 }

@@ -8,7 +8,9 @@ import { iContext } from "../../useFetchData";
 
 const UsersListBox = () => {
   const { userData } = useFetchData();
-  console.log(userData);
+
+  // console.log(userData);
+
   const start = 0;
   const end = 10;
 

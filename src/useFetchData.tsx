@@ -1,18 +1,20 @@
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 const useFetchData = () => {
   const [userData, setUserData] = useState([]);
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   const fetchData = async () => {
-    setLoading(true);
+    // setLoading(true);
     try {
-      await fetch(
-        "https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users"
-      )
-        .then((res) => res.json())
-        .then((data) => setUserData(data));
-      setLoading(true);
+      await axios
+        .get("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users")
+        .then((res) => {
+          setUserData(res.data);
+          // console.log(res.data);
+        });
+      // setLoading(true);
     } catch (error) {
       console.error(error);
     }
@@ -21,7 +23,7 @@ const useFetchData = () => {
     fetchData();
   }, []);
 
-  return { userData, loading };
+  return { userData };
 };
 export default useFetchData;
 

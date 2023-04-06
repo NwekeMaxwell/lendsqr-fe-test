@@ -2,8 +2,8 @@ import React from "react";
 import "./UserProp.scss";
 
 interface iUserprop {
-  title: string;
-  value: string;
+  title: string | undefined;
+  value: string | undefined;
 }
 
 const UserProp = ({ title, value }: iUserprop) => {

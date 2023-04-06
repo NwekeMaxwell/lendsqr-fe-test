@@ -13,7 +13,7 @@ function App() {
         <Route path="/" Component={LoginPage} />
         <Route path="/dashboard" Component={Dashboard} />
         <Route path="/users" Component={UsersPage} />
-        <Route path="/userdetails" Component={UserDetailsPage} />
+        <Route path="/userdetails/:id" Component={UserDetailsPage} />
         <Route path="*" element={<h1>PAGE NOT FOUND</h1>} />
       </Routes>
     </div>
