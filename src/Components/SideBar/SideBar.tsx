@@ -22,8 +22,16 @@ import iSliders from "../../Assets/sliders-h 1.svg";
 import iBadge from "../../Assets/badge-percent 1.svg";
 import iClipboard from "../../Assets/clipboard-list 1.svg";
 import iArrowDown from "../../Assets/Vector (2).svg";
+import itire from "../../Assets/tire 1.svg";
+import iExit from "../../Assets/sign-out 1.svg";
+
+import { useLocation } from "react-router-dom";
 
 const SideBar = () => {
+  const { pathname } = useLocation();
+  const logoutPath: boolean =
+    pathname !== "/dashboard" && pathname !== "/users";
+
   return (
     <div className="sidebar">
       <SubHeading
@@ -56,6 +64,14 @@ const SideBar = () => {
       <SubHeading icon={iSliders} title="Preferences " />
       <SubHeading icon={iBadge} title="Fees and Pricing  " />
       <SubHeading icon={iClipboard} title="Audit Logs " />
+      {logoutPath && (
+        <div className="logout">
+          <SubHeading icon={itire} title="Systems Messages " />
+          <div className="line"></div>
+          <SubHeading icon={iExit} title="Logout " />
+          <div className="logoutSpan">v1.2.0</div>
+        </div>
+      )}
     </div>
   );
 };

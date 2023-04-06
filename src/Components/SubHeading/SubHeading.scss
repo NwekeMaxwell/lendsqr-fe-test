@@ -8,6 +8,7 @@
   padding-left: 20px;
   transition: all 0.05s;
   color: rgba($color-primary, 0.5);
+  background-color: #fff;
 
   .icon {
     height: 16px;
@@ -21,11 +22,14 @@
   .title {
     width: 100%;
     height: 19px;
-
     font-family: "Work Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($color-basic, 0.03);
   }
 }

@@ -35,4 +35,21 @@
     line-height: 19px;
     color: $color-primary;
   }
+  .logout {
+    .line {
+      border-top: 1px solid $color-primary-dark;
+      margin: 50px 0px 10px 0px;
+    }
+    .logoutSpan {
+      height: 40px;
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: $color-primary;
+      padding-left: 30px;
+      margin-top: 20px;
+    }
+  }
 }
