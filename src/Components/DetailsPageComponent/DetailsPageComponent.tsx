@@ -3,14 +3,15 @@ import "./DetailsPageComponent.scss";
 import iArrowBack from "../../Assets/np_back_3007750_000000 1.svg";
 import UserBriefingComponent from "../UserBriefingComponent/UserBriefingComponent";
 import UserDetailsComponent from "../UserDetailsComponent/UserDetailsComponent";
+import { Link } from "react-router-dom";
 
 const DetailsPageComponent = () => {
   return (
     <div className="detailsPageComponent">
-      <div className="prevBtn">
+      <Link to="/users" className="prevBtn">
         <img src={iArrowBack} alt="" />
         <span>Back to Users</span>
-      </div>
+      </Link>
       <div className="introBox">
         <h1> User Details </h1>
         <div className="introBtns">
