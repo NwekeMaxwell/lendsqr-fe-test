@@ -34,6 +34,7 @@
         margin-left: -14%;
         border-radius: 0 0.7rem 0.7rem 0;
         position: relative;
+        cursor: pointer;
         img {
           @include abscenter;
         }
@@ -49,6 +50,9 @@
     color: $color-primary;
     align-items: center;
     padding: 1rem;
+    * {
+      cursor: pointer;
+    }
     div {
       width: 58px;
       height: 19px;
