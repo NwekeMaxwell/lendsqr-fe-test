@@ -28,6 +28,7 @@ import iExit from "../../Assets/sign-out 1.svg";
 import { useLocation } from "react-router-dom";
 
 const SideBar = () => {
+  // fetch url path and render logout
   const { pathname } = useLocation();
   const logoutPath: boolean =
     pathname !== "/dashboard" && pathname !== "/users";

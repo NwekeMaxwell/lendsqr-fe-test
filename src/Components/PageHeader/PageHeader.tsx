@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "./PageHeader.scss";
 import Logo from "../../Assets/logo.svg";
 import SearchIcon from "../../Assets/searchIcon.svg";
@@ -7,12 +7,14 @@ import Avatar from "../../Assets/avatar.jpg";
 import Arrow from "../../Assets/arrowDownIcon.svg";
 import Menu from "../../Assets/menu.svg";
 import Cross from "../../Assets/cross.svg";
+import { UserContext } from "../../AppContext";
 
 const PageHeader = () => {
-  const [click, setClicked] = useState(false);
+  const { user, setUser } = useContext(UserContext);
   const toggle = () => {
-    setClicked((prev) => !prev);
+    user.clicked ? setUser({ clicked: false }) : setUser({ clicked: true });
   };
+  // console.log(user.clicked);
 
   return (
     <div className="header">
@@ -20,7 +22,7 @@ const PageHeader = () => {
         <img src={Logo} alt="logo" className="logo" />
         <img
           onClick={toggle}
-          src={click ? Cross : Menu}
+          src={user.clicked ? Cross : Menu}
           alt="logo"
           className="menuIcon"
         />
