@@ -1,6 +1,6 @@
 # https://nweke-maxwell-lendsqr-fe-test.netlify.app/
 
-# lendsqr-fe-test
+# lendsqr frontend test
 
 ## Tech Stack
 + Typescript 
