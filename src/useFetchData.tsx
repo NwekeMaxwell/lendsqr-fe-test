@@ -1,6 +1,6 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
-import { UserContext } from "./AppContext";
+// import { UserContext } from "./AppContext";
 
 const useFetchData = () => {
   const [userData, setUserData] = useState([]);
