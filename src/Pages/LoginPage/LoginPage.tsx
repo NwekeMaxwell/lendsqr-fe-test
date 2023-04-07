@@ -23,7 +23,7 @@ const LoginPage = () => {
           <input type="email" placeholder="Email" />
           <label>
             <input type={text ? "text" : "password"} placeholder="Password" />
-            <span onClick={toggle}>{text ? "HIDE" : "SHOW"}</span>
+            <div onClick={toggle}>{text ? "HIDE" : "SHOW"}</div>
           </label>
           <span> FORGOT PASSWORD?</span>
           <br />

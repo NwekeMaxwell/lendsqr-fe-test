@@ -44,9 +44,10 @@
       }
       input {
         padding: 1rem;
-        width: 100%;
+        width: 90%;
         border: 1px solid $color-primary-dark;
         border-radius: 0.7rem;
+        border-right: none;
         @include respond(tab-port) {
           padding: 0.5rem;
           height: 1.5rem;
@@ -54,14 +55,13 @@
       }
       .searchIcon {
         background-color: $color-basic;
-        width: 56px;
+        width: 10%;
         height: 40px;
-        margin-left: -14%;
+        margin-left: -2%;
         border-radius: 0 0.7rem 0.7rem 0;
         position: relative;
         cursor: pointer;
         @include respond(tab-port) {
-          width: 10vw;
           height: 4vh;
         }
         img {
