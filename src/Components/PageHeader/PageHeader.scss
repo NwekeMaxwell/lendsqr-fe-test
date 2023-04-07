@@ -20,8 +20,19 @@
     .logo {
       height: 30px;
       width: 144px;
-      // @include respond(tab-port) {
-      // }
+    }
+    .menuIcon {
+      color: $color-primary;
+      background-color: $color-primary-dark;
+      border-radius: 10px;
+
+      position: fixed;
+      right: 2rem;
+      display: none;
+      @include respond(tab-port) {
+        display: block;
+        width: 7vw;
+      }
     }
     .searchField {
       display: flex;
