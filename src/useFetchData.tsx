@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-// import { UserContext } from "./AppContext";
 
 const useFetchData = () => {
   const [userData, setUserData] = useState([]);
-  // const [userData, setUserData] = useContext(UserContext);
 
   const fetchData = async () => {
     try {
