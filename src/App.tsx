@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.scss";
+import UserProvider from "./AppContext";
 import LoginPage from "./Pages/LoginPage/LoginPage";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard/Dashboard";
@@ -8,7 +8,7 @@ import UserDetailsPage from "./Pages/UserDetailsPage/UserDetailsPage";
 
 function App() {
   return (
-    <div className="App">
+    <UserProvider>
       <Routes>
         <Route path="/" Component={LoginPage} />
         <Route path="/dashboard" Component={Dashboard} />
@@ -16,7 +16,7 @@ function App() {
         <Route path="/userdetails/:id" Component={UserDetailsPage} />
         <Route path="*" element={<h1>PAGE NOT FOUND</h1>} />
       </Routes>
-    </div>
+    </UserProvider>
   );
 }
 

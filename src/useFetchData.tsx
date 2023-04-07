@@ -1,20 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
+import { UserContext } from "./AppContext";
 
 const useFetchData = () => {
   const [userData, setUserData] = useState([]);
-  // const [loading, setLoading] = useState(false);
+  // const [userData, setUserData] = useContext(UserContext);
 
   const fetchData = async () => {
-    // setLoading(true);
     try {
       await axios
         .get("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users")
         .then((res) => {
           setUserData(res.data);
-          // console.log(res.data);
         });
-      // setLoading(true);
     } catch (error) {
       console.error(error);
     }
