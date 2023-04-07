@@ -4,6 +4,9 @@
   padding: 60px;
   background-color: #f9f9f9;
   width: 100%;
+  @include respond(phone) {
+    padding: 1.5rem;
+  }
   .prevBtn {
     height: 30px;
     display: flex;
@@ -28,6 +31,9 @@
     display: flex;
     justify-content: space-between;
     margin: 32px 0px;
+    @include respond(phone) {
+      flex-direction: column;
+    }
     h1 {
       height: 28px;
       font-family: "Work Sans";
@@ -40,6 +46,7 @@
     .introBtns {
       display: flex;
       color: $color-secondary-dark;
+
       & span:nth-child(1) {
         color: $color-secondary-dark;
         border: 1px solid $color-secondary-dark;
@@ -61,6 +68,10 @@
         font-size: 14px;
         line-height: 16px;
         text-align: center;
+        @include respond(phone) {
+          height: 8.5vh;
+          margin: 5vh 0 0 3vw;
+        }
       }
     }
   }

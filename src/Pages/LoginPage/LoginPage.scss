@@ -3,23 +3,43 @@
 .loginPage {
   width: 100%;
   display: flex;
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
   //left side => logo & image
   .left {
     display: flex;
     flex-direction: column;
     width: 50vw;
+    @include respond(tab-port) {
+      width: 100vw;
+      justify-content: center;
+    }
 
     .logo {
       height: 36px;
       width: 173px;
       margin-left: 97px;
       margin-top: 106px;
+      @include respond(tab-land) {
+        width: 123px;
+        margin-left: 57px;
+        margin-top: 76px;
+      }
     }
     .image {
       height: 337px;
       width: 600px;
       margin-left: 67px;
       margin-top: 139px;
+      @include respond(tab-land) {
+        width: 400px;
+        margin-top: 56px;
+      }
+      @include respond(tab-port) {
+        width: 80vw;
+        margin-left: 47px;
+      }
     }
   }
   //right side => form
@@ -28,6 +48,10 @@
     padding: 5rem;
     display: flex;
     flex-direction: column;
+    @include respond(tab-port) {
+      width: 100vw;
+      // justify-content: center;
+    }
     h1 {
       //   font-family: "Avenir Next";
       color: $color-primary;
@@ -86,6 +110,14 @@
           border: none;
           background: none;
           cursor: pointer;
+          @include respond(phone) {
+            font-size: 10px;
+          }
+
+          @include respond(mini) {
+            margin-left: -25%;
+            margin-top: 22%;
+          }
         }
       }
       span {

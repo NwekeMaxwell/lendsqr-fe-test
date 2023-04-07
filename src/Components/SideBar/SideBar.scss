@@ -5,7 +5,9 @@
   box-shadow: $boxShadow;
   clip-path: inset(0px -10px 0px 0px);
   color: $color-primary;
-
+  @include respond(tab-port) {
+    display: none;
+  }
   h3 {
     // font-family: "Work Sans";
     font-weight: 500;

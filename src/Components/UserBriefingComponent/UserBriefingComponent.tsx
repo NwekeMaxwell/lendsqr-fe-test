@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./UserBriefingComponent.scss";
-import Avatar from "../../Assets/avatar.svg";
+// import Avatar from "../../Assets/avatar.svg";
 import iStarFilled from "../../Assets/np_star_1208084_000000 1.svg";
 import iStar from "../../Assets/np_star_1171151_000000 1.svg";
 import { useParams } from "react-router-dom";

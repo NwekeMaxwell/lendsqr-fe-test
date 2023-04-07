@@ -6,6 +6,11 @@
   left: 21%;
   // top: 50px;
   // left: 0px;
+  @include respond(phone) {
+    top: 50%;
+    left: 10%;
+    width: 80vw;
+  }
 
   display: flex;
   flex-direction: column;
@@ -54,6 +59,9 @@
     border: 1px solid $color-primary-dark;
     border-radius: 8px;
     margin-bottom: 20px;
+    @include respond(phone) {
+      width: 70vw;
+    }
 
     &::placeholder {
       //   font-family: "Work Sans";
