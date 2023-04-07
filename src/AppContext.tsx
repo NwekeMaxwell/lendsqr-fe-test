@@ -7,21 +7,30 @@ import {
 } from "react";
 
 export type User = {
-  name: string;
-  email: string;
+  clicked: boolean;
 };
+// export type User = {
+//   name: string;
+//   email: string;
+// };
 export interface UserContextInterface {
-  userData: User;
-  setUserData: Dispatch<SetStateAction<User>>;
+  user: User;
+  setUser: Dispatch<SetStateAction<User>>;
 }
 
 const defaultState = {
-  userData: {
-    name: "",
-    email: "",
+  user: {
+    clicked: false,
   },
-  setUserData: (user: User) => {},
+  setUser: (user: User) => {},
 } as UserContextInterface;
+// const defaultState = {
+//   user: {
+//     name: "",
+//     email: "",
+//   },
+//   setUser: (user: User) => {},
+// } as UserContextInterface;
 
 export const UserContext = createContext(defaultState);
 // export const UserContext = createContext<Partial<UserContextInterface>>({});
@@ -31,13 +40,16 @@ type UserProvideProps = {
 };
 
 export default function UserProvider({ children }: UserProvideProps) {
-  const [userData, setUserData] = useState<User>({
-    name: "",
-    email: "",
+  const [user, setUser] = useState<User>({
+    clicked: false,
   });
+  //   const [user, setUser] = useState<User>({
+  //     name: "",
+  //     email: "",
+  //   });
 
   return (
-    <UserContext.Provider value={{ userData, setUserData }}>
+    <UserContext.Provider value={{ user, setUser }}>
       {children}
     </UserContext.Provider>
   );
