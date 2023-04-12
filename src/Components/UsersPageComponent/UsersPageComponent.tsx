@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./UsersPageComponent.scss";
 import SummaryBox from "../SummaryBox/SummaryBox";
 import iPink from "../../Assets/icon (1).svg";
@@ -7,8 +7,13 @@ import ired from "../../Assets/icon (3).svg";
 import iorange from "../../Assets/icon (4).svg";
 import UsersListBox from "../UsersListBox/UsersListBox";
 import Footer from "../Footer/Footer";
+import { UserContext } from "../../AppContext";
+import FilterBox from "../FilterBox/FilterBox";
+import UserDropdownOption from "../UserDropdownOption/UserDropdownOption";
 
 const UsersPageComponent = () => {
+  const { user } = useContext(UserContext);
+
   return (
     <div className="usersContainer">
       <h1 className="title">Users</h1>
@@ -20,6 +25,8 @@ const UsersPageComponent = () => {
       </div>
       <div className="usersListBox">
         <UsersListBox />
+        {user.clicked ? <FilterBox /> : ""}
+        {user.clicked ? <UserDropdownOption /> : ""}
       </div>
       <div>
         <Footer />
