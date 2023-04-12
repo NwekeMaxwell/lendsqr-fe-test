@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const DetailsPageComponent = () => {
   return (
     <div className="detailsPageComponent">
-      <Link to="/users" className="prevBtn">
+      <Link to="/dashboard" className="prevBtn">
         <img src={iArrowBack} alt="" />
         <span>Back to Users</span>
       </Link>
