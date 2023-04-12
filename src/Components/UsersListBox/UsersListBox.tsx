@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./UsersListBox.scss";
 import iFilter from "../../Assets/filter-results-button.svg";
 import List from "../List/List";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import useFetchData, { iContext } from "../../useFetchData";
 import { UserContext } from "../../AppContext";
 
@@ -25,39 +25,27 @@ const UsersListBox = () => {
       <div className="heading">
         <span>
           ORGANIZATION
-          <Link to="/users">
-            <img onClick={toggle} src={iFilter} alt="" className="iFilter" />
-          </Link>
+          <img onClick={toggle} src={iFilter} alt="" className="iFilter" />
         </span>
         <span>
           USERNAME
-          <Link to="/users">
-            <img onClick={toggle} src={iFilter} alt="" className="iFilter" />
-          </Link>
+          <img onClick={toggle} src={iFilter} alt="" className="iFilter" />
         </span>
         <span>
           EMAIL
-          <Link to="/users">
-            <img onClick={toggle} src={iFilter} alt="" className="iFilter" />
-          </Link>
+          <img onClick={toggle} src={iFilter} alt="" className="iFilter" />
         </span>
         <span>
           PHONE NUMBER
-          <Link to="/users">
-            <img onClick={toggle} src={iFilter} alt="" className="iFilter" />
-          </Link>
+          <img onClick={toggle} src={iFilter} alt="" className="iFilter" />
         </span>
         <span>
           DATE JOINED
-          <Link to="/users">
-            <img onClick={toggle} src={iFilter} alt="" className="iFilter" />
-          </Link>
+          <img onClick={toggle} src={iFilter} alt="" className="iFilter" />
         </span>
         <span>
           STATUS
-          <Link to="/users">
-            <img onClick={toggle} src={iFilter} alt="" className="iFilter" />
-          </Link>
+          <img onClick={toggle} src={iFilter} alt="" className="iFilter" />
         </span>
       </div>
       <div className="listComponent">

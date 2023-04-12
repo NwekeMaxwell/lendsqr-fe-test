@@ -3,7 +3,7 @@ import UserProvider from "./AppContext";
 import LoginPage from "./Pages/LoginPage/LoginPage";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard/Dashboard";
-import UsersPage from "./Pages/UsersPage/UsersPage";
+// import UsersPage from "./Pages/UsersPage/UsersPage";
 import UserDetailsPage from "./Pages/UserDetailsPage/UserDetailsPage";
 
 function App() {
@@ -12,7 +12,6 @@ function App() {
       <Routes>
         <Route path="/" Component={LoginPage} />
         <Route path="/dashboard" Component={Dashboard} />
-        <Route path="/users" Component={UsersPage} />
         <Route path="/userdetails/:id" Component={UserDetailsPage} />
         <Route path="*" element={<h1>PAGE NOT FOUND</h1>} />
       </Routes>
@@ -21,3 +20,4 @@ function App() {
 }
 
 export default App;
+// <Route path="/users" Component={UsersPage} />

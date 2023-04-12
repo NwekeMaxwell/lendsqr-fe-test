@@ -22,7 +22,7 @@
       margin-left: 97px;
       margin-top: 106px;
       @include respond(tab-land) {
-        width: 123px;
+        width: 90vw;
         margin-left: 57px;
         margin-top: 76px;
       }
@@ -50,7 +50,7 @@
     flex-direction: column;
     @include respond(tab-port) {
       width: 100vw;
-      padding: 1.5rem;
+      padding: 3rem;
     }
     h1 {
       //   font-family: "Avenir Next";
@@ -96,11 +96,9 @@
         position: relative;
         display: flex;
         input {
-          width: 90%;
           border-right: none;
         }
         div {
-          width: 10%;
           color: $color-basic;
           border: 1px solid $color-primary-dark;
           //   font-family: "Avenir Next";
@@ -109,9 +107,8 @@
           font-weight: 600;
           font-size: 12px;
           line-height: 16px;
-          padding: 3vh 0px;
+          padding: 3vh 1vh 3vh 0px;
           text-align: center;
-          // margin: 0px auto;
           letter-spacing: 0.1em;
           cursor: pointer;
           @include respond(phone) {
@@ -119,8 +116,7 @@
           }
 
           @include respond(mini) {
-            margin-left: -25%;
-            margin-top: 22%;
+            margin-left: -10%;
           }
         }
       }
